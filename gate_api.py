@@ -15,7 +15,7 @@ class GateAPI:
         return r.json()
 
     def contracts(self):
-        return self.get("/futures/usdt/contracts", {"limit": 1000})
+        return self.get("/futures/usdt/contracts")
 
     def tickers(self):
         return self.get("/futures/usdt/tickers")
