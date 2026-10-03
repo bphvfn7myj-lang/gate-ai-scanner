@@ -25,6 +25,7 @@ jobs:
       - name: Run scanner
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          SCANNER_API_TOKEN: ${{ secrets.SCANNER_API_TOKEN }}
           OPENROUTER_MODEL: openrouter/auto
           TOP_CANDIDATES: "12"
           AI_CANDIDATES: "8"
