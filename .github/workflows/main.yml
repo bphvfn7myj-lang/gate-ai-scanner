@@ -24,8 +24,8 @@ jobs:
 
       - name: Run scanner
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENAI_MODEL: openai/gpt-5.6-luna
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: openai/gpt-5.6-luna
           TOP_CANDIDATES: "12"
           AI_CANDIDATES: "8"
           MIN_24H_VOLUME_USDT: "5000000"
